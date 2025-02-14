@@ -71,5 +71,45 @@ En el tab **ACF Fileds** se pueden agregar y eliminar campos personalizados a lo
 En el CPT de contacto hay un botón "ver contactos en el frontend" para acceder al listado.
 
 - El plugin genera un shortcode con un template tipo listado de empresas que se puede poner en cualquir parte del wordpress el shortcode es
-  ** [gcc_listar_empresas] **
+  [gcc_listar_empresas]
 
+## Estructura del Proyecto
+
+El proyecto está organizado siguiendo los principios de **Programación Orientada a Objetos (POO)** y utiliza **Vue.js** para renderizar listados, filtros y paginación en el frontend. A continuación, se describe la estructura y las tecnologías utilizadas.
+
+### 1. **Programación Orientada a Objetos (POO)**
+El plugin está desarrollado utilizando POO para garantizar un código modular, reutilizable y fácil de mantener. Las principales clases son:
+
+- **`GCC_Plugin`**: Clase principal del plugin GCC (Contacts & Companies Manager). Esta clase gestiona la inicialización del plugin, la carga de scripts, el registro de shortcodes, la configuración de endpoints REST API,y la integración con Advanced Custom Fields (ACF).
+- **`GCC_Custom_Post_Types`**: Clase para gestionar los Custom Post Types y sus funcionalidades asociadass. Esta clase se encarga de registrar los Custom Post Types (CPT), definir sus columnas personalizadas en el administrador y modificarla búsqueda para incluir datos relacionados
+- **`GCC_CPT_Empresas`**: Clase para registrar el Custom Post Type (CPT) "Empresas".
+- **`GCC_Taxonomies`**: Clase para registrar las taxonomías personalizadas. Esta clase se encarga de registrar y gestionar las taxonomías personalizadas utilizadas en el plugin, asegurando su correcta integración con los tipos de contenido personalizados
+
+### 2. **Frontend con Vue.js**
+Para mejorar la experiencia del usuario, el frontend utiliza **Vue.js** para renderizar dinámicamente los listados, filtros y paginación. La integración se realiza de la siguiente manera:
+
+- **Componentes Vue**:
+  - **`vue-app-company.js`**: Muestra el listado de contactos con paginación y filtros.
+  - **`vue-app-contact.js`**: Muestra el listado de empresas con paginación y filtros.
+
+- **API REST**:
+  - Se utiliza la API REST de WordPress para obtener los datos de los CPTs (Contactos y Empresas) y pasarlos a los componentes Vue.
+  - Los endpoints personalizados se registran usando `register_rest_route()`.
+
+- **Paginación y Filtros**:
+  - La paginación y los filtros se manejan mediante eventos de Vue.js y llamadas a la API REST.
+- Para cargar vue JS usamos una cdn que se carga en la clase principal del plugin
+  ** https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js **
+
+### 3. **Tecnologías Utilizadas**
+- **WordPress**: Como base del plugin, se aprovechan los Custom Post Types, la API REST y los hooks add_filter y add_action.
+- **Advanced Custom Fields PRO**: Para gestionar campos personalizados y relaciones entre contactos y empresas.
+- **Vue.js**: Para la renderización dinámica en el frontend.
+- **PHP**: Para la lógica del backend y la integración con WordPress.
+- **JavaScript (ES6)**: Para la interactividad en el frontend.
+- **CSS**: Para los estilos personalizados de la interfaz.
+
+### 4. **Estructura de Archivos**
+El proyecto sigue una estructura organizada para facilitar el mantenimiento y la escalabilidad:
+
+Gracias por explorar este proyecto.
