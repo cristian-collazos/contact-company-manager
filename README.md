@@ -6,11 +6,9 @@
 **License:** GPLv2 or later  
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html 
 
-**Contacts & Companies Manager** Es un plugin que permite gestionar contactos y empresas en un sitio WordPress.
-
 ## Descripción
 
-**GCC Contactos y Empresas** es un plugin que permite gestionar contactos y empresas en WordPress. Con este plugin, puedes:
+**Contacts & Companies Manager** Es un plugin que permite gestionar contactos y empresas en un sitio WordPress. Con este plugin, puedes:
 
 - Crear y gestionar **Custom Post Types (CPTs)** para contactos y empresas.
 - Usar **Advanced Custom Fields PRO** para agregar campos personalizados a los CPTs.
