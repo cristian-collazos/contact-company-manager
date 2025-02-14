@@ -2,7 +2,7 @@
 
 **Contributors:** cristian-collazos  
 **Tags:** contactos, empresas, custom post types, ACF, repeater fields  
-**Requiere Advanced Custom Fields PRO   
+**Requiere Advanced Custom Fields PRO **  
 **License:** GPLv2 or later  
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html 
 
