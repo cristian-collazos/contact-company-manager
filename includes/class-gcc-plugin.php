@@ -139,7 +139,7 @@ class GCC_Plugin {
         // Si ACF no está activo, mostrar advertencia
         if (!$acf_active) {
             echo '<div class="notice notice-error"><p>';
-            echo esc_html__('Warning: The "Advanced Custom Fields" plugin is required for this plugin to work correctly. Please install and activate it.', 'gcc-text-domain');
+            echo esc_html__('Warning: El "Advanced Custom Fields" es requerido para que este plugin funcione correctamente. Por favor instalelo y activelo. Para efectos de pruebas puedes darcargar el plugin ACF pro desde aquí', 'gcc-text-domain');
             echo '</p></div>';
         }
     }
