@@ -1,8 +1,7 @@
 # Contacts & Companies Manager
 
 **Contributors:** cristian-collazos  
-**Tags:** contactos, empresas, custom post types, ACF, repeater fields  
-**Requiere Advanced Custom Fields PRO **  
+**Tags:** contactos, empresas, custom post types, ACF, repeater fields   
 **License:** GPLv2 or later  
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html 
 
@@ -14,6 +13,13 @@
 - Usar **Advanced Custom Fields PRO** para agregar campos personalizados a los CPTs.
 - Relacionar contactos con empresas y gestionar su experiencia laboral mediante campos tipo **repeater**.
 - Organizar y visualizar la información de manera eficiente.
+- Visualizar en el frontend una lista de contactos, incluyendo:
+    -	Nombre del contacto.
+    -	Empresa actual (la más reciente en el repeater de experiencia laboral).
+    -	Nombre del superior jerárquico, si está configurado.
+    -	Un filtro en el frontend que permitr filtrar la lista de contactos por sector de la empresa actual.
+-	crear un shortcode que liste las empresas publicadas en un template tipo listado.
+-	El plugin cuenta con un panel de administración desde donde se puedgestionar la cantidad de registros que pueden aparecer en los listados y desde este panel tambien se pueden agregar campos personalizaos a los Custom Post Types (CPTs) de Contactos y Empresas.
   
 ## Requisitos
 
@@ -21,7 +27,7 @@
 
 ## Instalación
 
-1. Sube la carpeta `gcc-contactos-empresas` al directorio `/wp-content/plugins/`.
+1. Sube la carpeta `contact-company-manager-master` al directorio `/wp-content/plugins/`.
 2. Activa el plugin a través del menú 'Plugins' en WordPress.
 3. Asegúrate de tener instalado y activado **Advanced Custom Fields PRO**.
 4. ¡Comienza a gestionar tus contactos y empresas!
@@ -47,34 +53,23 @@ El plugin permite agregar la experiencia laboral de un contacto mediante campos 
 - Agregar múltiples experiencias laborales.
 - Relacionar cada experiencia con una empresa.
 - Especificar el cargo, fecha de inicio, fecha de fin y descripción.
+- Agregar múltiples experiencias laborales.
+- Relacionar cada experiencia con una empresa.
+- Especificar el cargo, fecha de inicio, fecha de fin y descripción.
+- 
+### 4. Panel administracion
+El plugin tiene un panel de administración, con dos tabs, uno para opciones generales y otro tab para agregar campos personalziados.
+En el tab **General setting** se pueden gestionar algunas configuraciones como 
+- Cantidad de registros (Paginacion) en los listados del FRONTEND
+- Se pueden excluir sectore en los listados
+En el tab **ACF Fileds** se pueden agregar y eliminar campos personalizados a los CPT´s de contacto y empresa
+- Plugin agrega una nueva opción en el menú de ajustes para acceder al panel de administación del plugin llamada **Gestión de Contactos y Empresas**
 
-## Changelog
+### 5. Listados del Frontend
+- El plugin genera un template de contactos en el frontend desde donde se pueden ver los contactos registrados  filtras por sector, para acceder al template se debe hacer del siguiente link 
+**tu-domino/index.php/contactos/**  
+En el CPT de contacto hay un botón "ver contactos en el frontend" para acceder al listado.
 
-### 6.3.12 
+- El plugin genera un shortcode con un template tipo listado de empresas que se puede poner en cualquir parte del wordpress el shortcode es
+  ** [gcc_listar_empresas] **
 
-**Release Date:** 21st January 2025
-
-* **Enhancement:** Error messages that occur when field validation fails due to an insufficient security nonce now have additional context.
-* **Fix:** Duplicated ACF blocks no longer lose their field values after the initial save when block preloading is enabled.
-* **Fix:** ACF Blocks containing complex field types now behave correctly when React StrictMode is enabled.
-
-### 6.3.11
-
-**Release Date:** 12th November 2024
-
-* **Enhancement:** Field Group keys are now copyable on click.
-* **Fix:** Repeater tables with fields hidden by conditional logic now render correctly.
-* **Fix:** ACF Blocks now behave correctly in React StrictMode.
-* **Fix:** Edit mode is no longer available to ACF Blocks with a WordPress Block API version of 3 as field editing is not supported in the iframe.
-
-### 6.3.10.2
-
-**Release Date:** 29th October 2024
-
-*(Free Only Release)*
-
-* **Fix:** ACF Free no longer causes a fatal error when any unsupported legacy ACF addons are active.
-
----
-
-For the full changelog, visit [Advanced Custom Fields PRO Changelog](https://www.advancedcustomfields.com/changelog/).
