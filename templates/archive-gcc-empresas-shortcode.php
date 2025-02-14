@@ -104,7 +104,7 @@
                 <button @click="applyFilter">Aplicar filtro</button>
             </div>
             <div v-if="companies.length === 0">
-                <p>No hay contactos disponibles.</p>
+                <p>No hay empresas disponibles.</p>
             </div>
             <div v-else>
                 <table class="contact-table">
