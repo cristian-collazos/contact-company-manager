@@ -1,0 +1,85 @@
+# Copyright (C) 2025 Cristian Collazos
+# This file is distributed under the same license as the Gestión de Contactos y Empresas plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Gestión de Contactos y Empresas 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/gestion-contactos-"
+"empresas\n"
+"Last-Translator: U-LAPTOP-3GLUGA8G\\Netexpertos "
+"<Netexpertos@laptop-3gluga8g>\n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-02-11T07:07:51+01:00\n"
+"PO-Revision-Date: 2025-02-11 13:08-0500\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: gestion-contactos-empresas\n"
+"Language: es\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#. Plugin Name of the plugin
+#: gestion-contactos-empresas.php
+msgid "Contacts & Companies Manager"
+msgstr "Gestión de Contactos y Empresas"
+
+#. Description of the plugin
+#: gestion-contactos-empresas.php
+msgid "Plugin to manage contacts and companies in WordPres"
+msgstr "Plugin para gestionar contactos y empresas en WordPress."
+
+#. Author of the plugin
+#: gestion-contactos-empresas.php
+msgid "Cristian Collazos"
+msgstr "Cristian Collazos"
+
+msgid "Contact"
+msgstr "Contacto"
+
+msgid "Contacts"
+msgstr "Contactos"
+
+msgid "Add New Contact"
+msgstr "Añadir Nuevo Contacto"
+
+msgid "Companies"
+msgstr "Empresas"
+
+msgid "Company"
+msgstr "Empresa"
+
+msgid "Edit Company"
+msgstr "Editar Empresa"
+
+msgid "Add New"
+msgstr "Añadir Nuevo"
+
+msgid "Edit"
+msgstr "Editar"
+
+msgid "New"
+msgstr "Nuevo"
+
+msgid "View"
+msgstr "Ver"
+
+msgid "Search"
+msgstr "Buscar"
+
+msgid "Search %s"
+msgstr "Buscar %s"
+
+msgid "All %s"
+msgstr "Todos los %s"
+
+msgid "Edit %s"
+msgstr "Editar %s"
+
+msgid "Update %s"
+msgstr "Actualizar %s"
+
+msgid "Add New %s"
+msgstr "Añadir nuevo %s"
+
+msgid "New %s Name"
+msgstr "Nuevo nombre de %s"
