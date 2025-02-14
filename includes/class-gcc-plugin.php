@@ -122,9 +122,9 @@ class GCC_Plugin {
 
         // Posibles rutas de instalación de ACF
         $acf_plugins = [
-            'advanced-custom-fields1/acf.php',
-            'advanced-custom-fields1-pro/acf.php',
-            'advanced-custom-fields1-pro-main/acf.php'
+            'advanced-custom-fields/acf.php',
+            'advanced-custom-fields-pro/acf.php',
+            'advanced-custom-fields-pro-main/acf.php'
         ];
 
         $acf_active = false;
@@ -139,8 +139,8 @@ class GCC_Plugin {
         // Si ACF no está activo, mostrar advertencia
         if (!$acf_active) {
             echo '<div class="notice notice-error"><p>';
-            echo esc_html__('Warning: El "Advanced Custom Fields" es requerido para que este plugin funcione correctamente. Por favor instalelo y activelo. Para efectos de pruebas puedes darcargar el plugin ACF pro desde aquí', 'gcc-text-domain');
-            echo '</p></div>';
+            echo esc_html__('Warning: El "Advanced Custom Fields PRO" es requerido para que este plugin funcione correctamente. Por favor instálelo y actívelo. Para efectos de pruebas puedes descargar el plugin ACF Pro desde aquí: ', 'gcc-text-domain');
+            echo '<br/><a href="https://github.com/cristian-collazos/advanced-custom-fields-pro-main" target="_blank">https://github.com/cristian-collazos/advanced-custom-fields-pro-main</a>';            echo '</p></div>';
         }
     }
 
