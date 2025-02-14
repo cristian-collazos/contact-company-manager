@@ -21,6 +21,9 @@ class GCC_Plugin {
      * - Registra acciones y filtros de WordPress.
      */ 
     public function __construct() {
+
+        add_action('admin_notices', array($this, 'gcc_check_acf_dependency'));
+
         $this->define_constants();
         $this->include_files();
         $this->initialize_classes();
@@ -106,6 +109,39 @@ class GCC_Plugin {
         add_action('admin_post_delete_acf_field', array($this, 'handle_delete_acf_field'));
 
         
+    }
+
+    /**
+     * Verifica si ACF está instalado y activo. Si no lo está, muestra una alerta en el admin.
+     */
+    function gcc_check_acf_dependency() {
+        // Asegurar que la función is_plugin_active() esté disponible
+        if (!function_exists('is_plugin_active')) {
+            require_once ABSPATH . 'wp-admin/includes/plugin.php';
+        }
+
+        // Posibles rutas de instalación de ACF
+        $acf_plugins = [
+            'advanced-custom-fields1/acf.php',
+            'advanced-custom-fields1-pro/acf.php',
+            'advanced-custom-fields1-pro-main/acf.php'
+        ];
+
+        $acf_active = false;
+        
+        foreach ($acf_plugins as $acf_plugin) {
+            if (is_plugin_active($acf_plugin)) {
+                $acf_active = true;
+                break;
+            }
+        }
+
+        // Si ACF no está activo, mostrar advertencia
+        if (!$acf_active) {
+            echo '<div class="notice notice-error"><p>';
+            echo esc_html__('Warning: The "Advanced Custom Fields" plugin is required for this plugin to work correctly. Please install and activate it.', 'gcc-text-domain');
+            echo '</p></div>';
+        }
     }
 
     /**
