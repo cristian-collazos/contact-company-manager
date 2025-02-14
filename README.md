@@ -112,4 +112,7 @@ Para mejorar la experiencia del usuario, el frontend utiliza **Vue.js** para ren
 ### 4. **Estructura de Archivos**
 El proyecto sigue una estructura organizada para facilitar el mantenimiento y la escalabilidad:
 
-Gracias por explorar este proyecto.
+Gracias por explorar este proyecto. Quedo atento a cualquier duda.
+
+Saludos,
+Cristian Collazos Prado
