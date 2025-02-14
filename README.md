@@ -2,39 +2,53 @@
 
 **Contributors:** cristian-collazos  
 **Tags:** contactos, empresas, custom post types, ACF, repeater fields  
-**Requires at least:** 5.0  
-**Tested up to:** 6.4  
-**Stable tag:** 1.0.0  
+**Requiere Advanced Custom Fields PRO   
 **License:** GPLv2 or later  
 **License URI:** https://www.gnu.org/licenses/gpl-2.0.html 
 
 **Contacts & Companies Manager** Es un plugin que permite gestionar contactos y empresas en un sitio WordPress.
 
-## Usage
+## Descripción
 
-This is the **fully activated premium version** of the plugin, provided by [wordpress-premium.net](https://www.wordpress-premium.net). It has been scanned for security issues and is intended **for evaluation purposes only**. To use Advanced Custom Fields PRO on a live website, please [purchase a license](https://www.advancedcustomfields.com/pro/) directly from the official website.
+**GCC Contactos y Empresas** es un plugin que permite gestionar contactos y empresas en WordPress. Con este plugin, puedes:
 
-**Important:** Unlicensed ("nulled") usage may violate the developer's terms and will not include official updates or support.
+- Crear y gestionar **Custom Post Types (CPTs)** para contactos y empresas.
+- Usar **Advanced Custom Fields PRO** para agregar campos personalizados a los CPTs.
+- Relacionar contactos con empresas y gestionar su experiencia laboral mediante campos tipo **repeater**.
+- Organizar y visualizar la información de manera eficiente.
+  
+## Requisitos
 
-### Using Premium Features
+- **Advanced Custom Fields PRO**: Este plugin es requerido para que GCC Contactos y Empresas funcione correctamente. Puedes descargarlo desde [aquí](https://github.com/cristian-collazos/advanced-custom-fields-pro-main).
 
-Advanced Custom Fields PRO comes with a range of advanced features, including:
+## Instalación
 
-- **Repeater Field:** Create a set of subfields that can be repeated as many times as needed.
-- **Flexible Content Field:** Define, create, and manage content with multiple layouts and subfield options.
-- **Options Page:** Add custom admin pages to edit ACF fields.
-- **Gallery Field:** Build fully customizable image galleries.
-- **Clone Field:** Reuse existing fields and field groups to streamline your workflow.
+1. Sube la carpeta `gcc-contactos-empresas` al directorio `/wp-content/plugins/`.
+2. Activa el plugin a través del menú 'Plugins' en WordPress.
+3. Asegúrate de tener instalado y activado **Advanced Custom Fields PRO**.
+4. ¡Comienza a gestionar tus contactos y empresas!
 
-To access these features, simply activate the plugin and navigate to the **ACF** section in your WordPress dashboard.
+## Uso
 
-## Donate
+### 1. Custom Post Types (CPTs)
+El plugin crea dos CPTs:
 
-If [WordPress Premium](https://www.wordpress-premium.net/) helps you access premium plugins safely, consider [supporting us via PayPal](https://www.paypal.com/paypalme/thaikolja) to keep the service running.
+- **Contactos**: Para gestionar información de personas (nombre, teléfono, correo, etc.).
+- **Empresas**: Para gestionar información de empresas (nombre, dirección, sector, etc.).
 
----
+### 2. Campos Personalizados
+Usando Advanced Custom Fields PRO, el plugin agrega campos personalizados a los CPTs, como:
 
-Here are the last three updates from the Advanced Custom Fields PRO changelog to keep you in the loop.
+- **Campos básicos**: Nombre, teléfono, correo electrónico, etc.
+- **Campos de relación**: Relaciona contactos con empresas.
+- **Campos tipo repeater**: Gestiona la experiencia laboral de los contactos.
+
+### 3. Experiencia Laboral
+El plugin permite agregar la experiencia laboral de un contacto mediante campos tipo repeater. Puedes:
+
+- Agregar múltiples experiencias laborales.
+- Relacionar cada experiencia con una empresa.
+- Especificar el cargo, fecha de inicio, fecha de fin y descripción.
 
 ## Changelog
 
