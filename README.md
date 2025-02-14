@@ -109,8 +109,28 @@ Para mejorar la experiencia del usuario, el frontend utiliza **Vue.js** para ren
 - **JavaScript (ES6)**: Para la interactividad en el frontend.
 - **CSS**: Para los estilos personalizados de la interfaz.
 
+
 ### 4. **Estructura de Archivos**
 El proyecto sigue una estructura organizada para facilitar el mantenimiento y la escalabilidad:
+
+## Internacionalización (i18n) y Archivos de Idioma
+
+El plugin está preparado para ser traducible a múltiples idiomas, siguiendo las mejores prácticas de internacionalización de WordPress. Aquí te explicamos cómo se implementó:
+
+### 5. **Funciones de Traducción**
+Se utilizaron las siguientes funciones de WordPress para hacer que los textos sean traducibles:
+
+- **`esc_html__()`**: Para traducir cadenas de texto y escapar HTML.
+- **`esc_html_e()`**: Para traducir y mostrar cadenas de texto.
+- **`esc_html_x()`**: Para traducir cadenas con contexto.
+- **`__()`**: Para traducir cadenas sin escapar HTML.
+- **`_e()`**: Para traducir y mostrar cadenas sin escapar HTML.
+- **`_x()`**: Para traducir cadenas con contexto sin escapar HTML.
+
+Ejemplo:
+```php
+$texto_traducido = esc_html__('Hola, mundo!', 'gcc-text-domain');
+echo $texto_traducido;
 
 Gracias por explorar este proyecto. Quedo atento a cualquier duda.
 
