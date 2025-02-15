@@ -122,15 +122,19 @@ Se utilizaron las siguientes funciones de WordPress para hacer que los textos se
 
 - **`esc_html__()`**: Para traducir cadenas de texto y escapar HTML.
 - **`esc_html_e()`**: Para traducir y mostrar cadenas de texto.
-- **`esc_html_x()`**: Para traducir cadenas con contexto.
 - **`__()`**: Para traducir cadenas sin escapar HTML.
-- **`_e()`**: Para traducir y mostrar cadenas sin escapar HTML.
-- **`_x()`**: Para traducir cadenas con contexto sin escapar HTML.
 
-Ejemplo:
-```php
-$texto_traducido = esc_html__('Hola, mundo!', 'gcc-text-domain');
-echo $texto_traducido;
+* Los archivos de traducción (.po y .mo) se almacenan en la carpeta lang/ del plugin. Estos archivos contienen las cadenas de texto traducibles y sus correspondientes traducciones.
+
+contact-company-manager.pot: Archivo de plantilla que contiene todas las cadenas de texto traducibles.
+
+contact-company-manager-es_ES.po: Archivo de traducción para el idioma español.
+
+contact-company-manage-en_US.po: Archivo de traducción para el idioma inglés.
+
+*  Compilación de Archivos .po con WP-CLI
+Para compilar los archivos .po y generar los archivos .mo (que son los archivos binarios que WordPress utiliza para cargar las traducciones), se utiliza WP-CLI, una herramienta de línea de comandos para WordPress.
+
 
 Gracias por explorar este proyecto. Quedo atento a cualquier duda.
 
