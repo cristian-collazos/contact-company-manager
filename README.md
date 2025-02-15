@@ -126,11 +126,11 @@ Se utilizaron las siguientes funciones de WordPress para hacer que los textos se
 
 * Los archivos de traducción (.po y .mo) se almacenan en la carpeta lang/ del plugin. Estos archivos contienen las cadenas de texto traducibles y sus correspondientes traducciones.
 
-contact-company-manager.pot: Archivo de plantilla que contiene todas las cadenas de texto traducibles.
+     - **contact-company-manager.pot**: Archivo de plantilla que contiene todas las cadenas de texto traducibles.
 
-contact-company-manager-es_ES.po: Archivo de traducción para el idioma español.
+     - **contact-company-manager-es_ES.po**: Archivo de traducción para el idioma español.
 
-contact-company-manage-en_US.po: Archivo de traducción para el idioma inglés.
+     - **contact-company-manage-en_US.po**: Archivo de traducción para el idioma inglés.
 
 *  Compilación de Archivos .po con WP-CLI
 Para compilar los archivos .po y generar los archivos .mo (que son los archivos binarios que WordPress utiliza para cargar las traducciones), se utiliza WP-CLI, una herramienta de línea de comandos para WordPress.
